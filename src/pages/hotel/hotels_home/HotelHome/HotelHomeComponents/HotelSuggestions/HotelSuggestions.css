@@ -1,0 +1,131 @@
+.HotelHomeStart__Scroller .hotelSuggestions {
+    width: 100%;
+    height: 100%;
+}
+.hotelSuggestions .hS__Content {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.hS__Content::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.hS__Content ul,
+.hS__Ul li {
+    width: 100%;
+    height: auto;
+}
+.hS__Ul {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 5px;
+    list-style: none;
+}
+.hS__Ul, .hS__Main, .hS__Main > div {
+    display: flex;
+    flex-direction: column;
+}
+.hS__Li {
+    box-sizing: border-box;
+    padding: 0px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    border: .8px solid #e2e8f0;
+}
+.hS__Li:hover {
+    background-color: rgb(243, 243, 243);
+}
+.hS__Li .hS__Img {
+    width: 150px;
+    background-color: gray;
+}
+.hS__Img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+.hS__Li .hS__Main {
+    width: calc(100% - 130px);
+    box-sizing: border-box;
+    padding: 10px 0px;
+    margin-left: 10px;
+    justify-content: space-between;
+    min-height: 100%;
+    height: auto;
+}
+.hS__Big {
+    font-size: 17px;
+    font-weight: 550;
+    line-height: 1.5rem;
+}
+.hS__Small {
+    font-size: 13px;
+    margin-top: 0px;
+    line-height: 1.3rem;
+}
+.hS__rooms {
+    width: max-content;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+}
+.hS__Main > div {
+    margin-top: 5px;
+}
+.hS__rooms {
+    margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+    .hS__Content {
+        box-sizing: border-box;
+        padding: 0px 5px;
+    }
+    .hS__Li {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    .hS__Li > div {
+        width: 100% !important;
+    }
+    .hS__Img {
+        height: 150px;
+    }
+    .hS__Li .hS__Main {
+        margin-top: 15px;
+        margin-left: 0px;
+        align-items: flex-start;
+    }
+    .hS__Main > div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hS__rooms {
+        width: max-content !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .hS__Big {
+        font-size: 17px;
+    }
+    .hS__Small {
+        font-size: 13px;
+        line-height: 1.3rem;
+    }
+}

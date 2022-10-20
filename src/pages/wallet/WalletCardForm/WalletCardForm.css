@@ -1,0 +1,57 @@
+.Wallet .WCF {
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0px 0px 20px 0px;
+}
+.WCF form, .WCF form > div {
+    width: 100%;
+    height: auto;
+}
+.WCF form h1 {
+    font-size: 23px;
+    text-align: center;
+}
+.WCF form, .WCF__Input {
+    display: flex;
+    flex-direction: column;
+}
+.WCF__Bottom {
+    margin-top: 20px;
+}
+.WCF__Input {
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.WCF__Input span {
+    font-size: 18px;
+    font-weight: 550;
+}
+.WCF__Input input {
+    border: 1px solid #e2e8f0;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 10px;
+    background: none;
+    outline: none;
+    margin-top: 6px;
+}
+.WCF__Input input:focus {
+    border: 1px solid black;
+}
+@media screen and (max-width: 770px) {
+    .Wallet .WCF {
+        width: 90%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .WCF {
+        padding: 0px 15px 20px 15px;
+    }
+    .Wallet .WCF {
+        width: 100%;
+        height: auto;
+    }
+}

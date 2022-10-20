@@ -1,0 +1,47 @@
+.messagePrompt {
+    max-width: 280px;
+    min-width: 250px;
+    width: max-content;
+    height: auto;
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 99999999;
+    transition: transform .2s ease-in-out;
+    top: 15px;
+    right: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.15);
+}
+.messagePrompt.false {
+    transform: translateX(120%);
+}
+.messagePrompt.true {
+    transform: translateX(0px);
+}
+.mP__Div {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.mP__Img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mP__Img svg {
+    width: 20px;
+    height: 20px;
+}
+.mP__Div span {
+    width: calc(100% - 50px);
+    margin-left: 10px;
+    line-height: 1.3rem;
+    display: inline-block;
+    font-size: 14px;
+}

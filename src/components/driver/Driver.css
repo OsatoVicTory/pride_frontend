@@ -1,0 +1,66 @@
+.mD_layer2 .driver {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+.driver {
+    display: flex;
+    justify-content: space-between;
+}
+.driver .driver_pics {
+    width: 40%;
+    margin: 0px;
+    display: flex;
+}
+.driver .column_text {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.driver_pics .relative_pic {
+    margin-left: -20px;
+    width: 80px;
+    height: 70px;
+}
+
+.driver_pics .absolute_pic {
+    width: 70px;
+    height: 70px;
+    margin-left: 0px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.relative_pic img,
+.absolute_pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.absolute_pic img {
+    border-radius: 50%;
+}
+.display {
+    display: flex;
+    justify-content: flex-end;
+}
+.display span {
+    line-height: 1.2rem;
+}
+.star {
+    display: flex;
+}
+.star svg {
+    margin-top: 3px;
+}
+.thick_big {
+    font-size: 19px;
+    color:rgb(20, 20, 20);
+    font-weight: 600;
+}
+.light_med {
+    font-size: 14px;
+    color:rgb(125, 125, 125);
+    font-weight: 480;
+}

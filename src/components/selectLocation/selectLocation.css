@@ -1,0 +1,116 @@
+.mapModal .selectLoc_div {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.selectLoc_div .selectLoc {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow-y: hidden;
+}
+    /* scrollbar-width: none;
+}
+.selectLoc::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    border-radius: 10px;
+} */
+.selectLoc::-webkit-scrollbar-thumb {
+    background-color: rgba(27,27,27,.15);
+}
+.selectLoc h1 {
+    font-size: 35px;
+    font-weight: 550;
+    line-height: 2.3rem;
+    margin: 0px 10px;
+}
+.selectLoc .inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+.inputs input {
+    width: calc(100% - 20px);
+    margin: 10px 10px;
+    padding: 13px 10px 13px 60px;
+    box-sizing: border-box;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    font-size: 16px;
+    color:rgb(125, 125, 125);
+    font-weight: 480;
+    outline: none;
+}
+input::placeholder {
+    font-size: 16px;
+    color:rgb(125, 125, 125);
+    font-weight: 480;
+}
+input:focus {
+    border: 1px solid black;
+}
+.connect_string {
+    position: absolute;
+    z-index: 10;
+    margin-top: 24px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.string {
+    width: 2.4px;
+    height: 60px;
+    background-color: rgb(2, 2, 2);
+    margin: .5px 0px .5px 5.5px;
+}
+
+.leave_now {
+    width: max-content;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(245, 245, 245);
+}
+.selectLoc .scroller {
+    width: 100%;
+    height: calc(100% - 200px);
+    box-sizing: border-box;
+}
+.selectLoc .scroller.false {
+    overflow: auto;
+    scrollbar-width: none;
+}
+.selectLoc .scroller.true {
+    height: calc(100% - 250px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.selectLoc .scroller::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    border-radius: 10px;
+}
+.scroller .spinner__Div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

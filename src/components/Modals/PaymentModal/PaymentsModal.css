@@ -1,0 +1,101 @@
+.Modal__Content .paymentsModal {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+.Modal__Content .paymentsModal__Loader {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+.paymentsModal, .paymentsModal__Mid {
+    display: flex;
+    flex-direction: column;
+}
+.paymentsModal > div {
+    width: 100%;
+    height: auto;
+}
+.paymentsModal__Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.paymentsModal__Top h1 {
+    font-size: 23px;
+    font-weight: 550;
+    line-height: 1.5rem;
+}
+.paymentsModal__Top svg {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.paymentsModal__Bottom {
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 100px;
+}
+.paymentsModal__Mid > div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border-top: 1px solid #e2e8f0;
+}
+.pMM {
+    cursor: pointer;
+}
+.pMM:hover {
+    background-color: rgb(233,234,232);
+}
+.pMM > div {
+    display: flex;
+    align-items: center;
+}
+.pMM > div svg {
+    width: 23px;
+    height: 20px;
+}
+.pMM > div span {
+    font-size: 19px;
+    font-weight: 550;
+    margin-left: 20px;
+}
+.pMM__Svg {
+    width: max-content;
+    height: auto;
+}
+.pMM__Svg svg {
+    width: 22px;
+    height: 22px;
+}
+.pMM__Left svg, .pMM__Left img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+@media screen and (max-width: 500px) {
+    .Modal__Content .paymentsModal {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    .paymentsModal {
+        justify-content: space-between;
+    }
+    .paymentsModal .paymentsModal__Mid {
+        height: calc(100% - 130px) !important;
+    }
+}

@@ -1,0 +1,201 @@
+.PageLayout header {
+    width: 100%;
+    height: 60px;
+    /* overflow: hidden;
+    position: relative; */
+}
+header .header__Wrapper {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.header__Wrapper, 
+.header__Routes__Full {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 22px;
+    font-weight: 650;
+    line-height: 1.1rem;
+    color: white;
+}
+.header__Wrapper .header__Routes__Full {
+    width: calc(100% - 80px);
+    height: 100%;
+}
+.header__Routes__Full ul {
+    width: max-content;
+    height: auto;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 20px;
+}
+.header__Routes__ul li {
+    width: max-content;
+    height: auto;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.header__Routes__ul li:hover {
+    color: rgb(226, 224, 224);
+}
+.header__Routes__Full ._Profile {
+    width: max-content;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+._Profile .profilePic {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.profilePic span {
+    font-size: 17px;
+    margin-left: 10px;
+    color: white;
+    font-size: 600;
+}
+.header__Dropdown {
+    position: absolute;
+    z-index: 9999;
+    top: 30px;
+    right: 0px;
+    width: max-content;
+    height: auto;
+    display: none;
+}
+._Profile:hover .header__Dropdown {
+    display: block;
+}
+.header__Dropdown__Content {
+    width: max-content;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.header__Dropdown__Content::after {
+    position: absolute;
+    content: "";
+    z-index: 10;
+    top: -18px;
+    right: 10px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid rgb(255, 255, 255);
+}
+.header__Dropdown__Content > span {
+    font-size: 20px;
+    color: black;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    padding: 10px 40px 10px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    font-weight: 600;
+}
+.header__Dropdown__Content ul {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header__Dropdown__ul li {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 40px 10px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+/* .header__Dropdown__ul > li:last-child {
+    padding: 10px 10px 20px 10px;
+} */
+.header__Dropdown__ul svg {
+    width: 20px;
+    height: 20px;
+}
+.header__Dropdown__ul li span {
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.header__Dropdown__ul li:hover {
+    background-color: rgb(234,232,232);
+}
+.header__Routes__Full ._Profile__Mobile {
+    width: max-content;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+.avatar {
+    width: 25px;
+    height: 25px;
+}
+.avatar svg {
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    header .header__Wrapper {
+        padding: 10px;
+    }
+    .header__Wrapper .header__Routes__Full {
+        width: calc(100% - 60px);
+    }
+    .header__Routes__Full ._Profile__Mobile {
+        display: flex;
+    }
+    ._Profile {
+        display: none;
+    }
+    .header__Routes__ul li {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 399px) {
+    .header__Routes__ul li {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .logo {
+        font-size: 21px;
+    }
+    .header__Routes__ul li {
+        font-size: 13px;
+    }
+    .avatar {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .header__Routes__Full ul {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+.meetDriver .mD1, .meetDriver .mD_img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 15px 8px 15px;
+}
+.mD1 {
+    border-bottom: .8px solid blue;
+}
+.mD1 h1 {
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+.mD_img {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 30px 0px;
+}
+.mD_img img {
+    width: 130px;
+    height: 70px;
+}
+.meetDriver .mDD__Loading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.meetDriver .scroller.mDD {
+    height: calc(100% - 160px);
+    margin-top: 15px;
+}

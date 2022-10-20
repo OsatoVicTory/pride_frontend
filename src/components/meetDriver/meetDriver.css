@@ -1,0 +1,162 @@
+.mapModal .meetDriver {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    padding: 1px;
+}
+.meetDriver, .meetDriverTimer, .mD4,
+.mD_layer5 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.meetDriver .mD_layer1,
+.meetDriver .mD_layer2,
+.meetDriver .mD_layer3  {
+    width: 100%;
+    /* margin-top: 10px; */
+    box-sizing: border-box;
+    padding: 5px 15px;
+}
+.meetDriver .scroller {
+    width: 100%;
+    height: calc(100% - 150px);
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.meetDriver .scroller::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.scroller .mD_layer4,
+.scroller .mD_layer5 {
+    width: 100%;
+    /* margin-top: 10px; */
+    box-sizing: border-box;
+    padding: 5px 15px;
+}
+.mD_layer1, .mD4_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mD_layer1 { 
+    border-bottom: 1px solid #e2e8f0;
+}
+.mD_layer1 span {
+    width: 80%;
+}
+.mD_layer1 .meetDriverTimer {
+    width: 15%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: black;
+}
+.meetDriverTimer span {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+}
+.mD_layer4 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 12px;
+}
+.mD_layer4 .mD4_content {
+    width: 85%;
+    height: auto;
+}
+.mD4_content .mD4 {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.mD4_svg {
+    width: 60px;
+    height: 60px; 
+    border-radius: 50%;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.mD4 span {
+    margin-top: 8px;
+    font-size: 15px;
+    color:rgb(20, 20, 20);
+    font-weight: 600;
+}
+.mD_layer5 {
+    border-top: 1px solid #e2e8f0;
+    height: auto;
+    margin-top: 5px;
+}
+.mD_layer5 .pickup {
+    width: 100%;
+    height: auto;
+}
+.pickup {
+    display: flex;
+    align-items: center;
+}
+.block {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    margin-left: 1px;
+    background-color: black;
+}
+
+.meetDriver .cancel {
+    /* position: fixed;
+    z-index: 11; */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    /* left: 20px;
+    top: 88%; */
+    border-radius: 0px 0px 10px 10px;
+    color: red;
+    background: rgb(255, 255, 255);
+    font-size: 17px;
+    border-top: 1px solid #e2e8f0;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    cursor: pointer;
+}
+@media screen and (min-width: 601px) {
+    .mapModal .meetDriver {
+        position: relative;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* .cancel {
+        top: 91%;
+        left: 0px;
+        width: 100%;
+    } */
+    .mapModal .meetDriver {
+        padding: 5px;
+    }
+    .meetDriver .cancel {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+    }
+}

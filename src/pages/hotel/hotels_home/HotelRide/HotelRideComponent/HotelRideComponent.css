@@ -1,0 +1,150 @@
+.hotelRide__Scroller .hotelSelected {
+    width: 100%;
+    height: 100%;
+}
+.hotelSelected .hSS__Content__Div {
+    width: 100%;
+    height: 100%;
+    scrollbar-width: none;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 0px 0px 100px 0px;
+}
+.hSS__Content__Div .hSS__Content {
+    width: 100%;
+    height: auto;
+    /* border: 1.5px solid #e2e8f0; */
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.hSS__Content__Div::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.hotelSelected {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.hSS__Content__Div {
+    display: flex;
+    flex-direction: column;
+}
+.hSS__Content, .hSS__Txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hSS__Content img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    margin-top: 5px;
+}
+.hSS__Big {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.hSS__Content .hSS__Small {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 1.5rem;
+    height: auto;
+    width: 100%;
+}
+.hSS__Txt > div {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+.hSS__Txt > div span {
+    margin-left: 5px;
+    font-size: 20px;
+}
+.hSS__Txt > div svg {
+    width: 22px;
+    height: 22px;
+}
+
+.hSS__Content__Div .hSS__Pride {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #e2e8e2;
+    border-radius: 5px;
+}
+.hSS__Pride img {
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+    margin-left: -7px;
+}
+.hSS__Pride .hSS__Pride__Texts {
+    width: max-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: flex-end;
+}
+.hSS__Pride__Top {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.hSS__Pride__Top span, .hSS__Pride__Top svg {
+    margin-left: 10px;
+}
+.hSS__Pride__Thick_med {
+    font-size: 16px;
+    color:rgb(20, 20, 20);
+    font-weight: 600;
+}
+.hSS__Pride__Med {
+    font-size: 16px;
+    color:rgb(125, 125, 125);
+    font-weight: 480;
+}
+.hSS__Pride__Thick_small {
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+.hSS__Pride__Small {
+    font-size: 14px;
+    color:rgb(125, 125, 125);
+    font-weight: 450;
+}
+.hotelSelected .hSS__Bottom {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #e2e8f0;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #FFFFFF;
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    left: 0px;
+}
+.hSS__Bottom a {
+    color: black !important;
+    text-decoration: none !important;
+    margin: 0px 0px 5px 0px;
+}
+@media screen and (max-width: 600px) {
+    .hotelSelected .hSS__Bottom {
+        position: fixed;
+        z-index: 10;
+        bottom: 0px;
+        left: 0px;
+    }
+}

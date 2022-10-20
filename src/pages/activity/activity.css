@@ -1,0 +1,224 @@
+.MainApp_content .Activities {
+    height: 100%;
+    position: absolute;
+    z-index: 19;
+    right: 0px;
+    top: 0px;
+    width: 400px;
+}
+.Activities .activities__Wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    padding: 10px 15px 5px 15px;
+}
+.activities__Wrapper > h1 {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.activities__Wrapper, .activities__Content ul,
+li .activities__Dets, li .activities__Paid {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.activities__Top ul,
+.activities__Content ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.activities__Content { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activities__Wrapper > div {
+    width: 100%;
+}
+.activities__Top {
+    height: 60px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+.Activities ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+.activities__Top ul {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+.activities__Top ul li {
+    width: max-content;
+    white-space: nowrap;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    border: .5px solid #e2e8f0;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.activities__Route.false {
+    background-color: #FFFFFF;
+    color: black;
+}
+.activities__Route.true {
+    background-color: black;
+    color: white;
+}
+.activities__Wrapper .activities__Content {
+    height: calc(100% - 115px);
+    box-sizing: border-box;
+    padding: 10px 0px 0px 0px;
+}
+.activities__Content .noTrips {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.noTrips span {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.activities__Content ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    border-top: 1px solid #e2e8f0;
+}
+.activities__Content ul::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+.activities__Content ul::-webkit-scrollbar-thumb {
+    background-color: rgba(27,27,27,.15);
+}
+.activities__Content ul li {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.activities__Content ul > li:first-child {
+    border-top: none;
+}
+.activities__Svg {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 50%;
+}
+li .activities__li__left {
+    width: calc(100% - 50px);
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.activities__Svg svg {
+    width: 20px;
+    height: 20px;
+}
+.activities__li__left .activities__Dets {
+    max-width: calc(100% - 50px);
+    width: max-content;
+    height: auto;
+    margin-left: 13px;
+}
+.activities__li__left .activities__Paid {
+    width: max-content;
+    height: auto;
+}
+.activities__Big {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(31, 31, 31);
+    line-height: 1.1rem;
+}
+.activities__Small {
+    font-size: 13px;
+    line-height: 1.1rem;
+    font-weight: 500;
+    color: #a0aec0;
+    margin-top: 8px;
+}
+@media screen and (max-width: 600px) {
+    .activities__Top ul li {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .activities__Map {
+        display: none;
+    }
+    .Activities .activities__Wrapper {
+        width: 100%;
+    }
+    .activities__Top {
+        overflow-x: scroll;
+    }
+}
+@media screen and (max-width: 500px) {
+    .activities__Svg {
+        width: 40px;
+        height: 40px;
+    }
+    .activities__Svg svg {
+        width: 30px;
+        height: 30px;
+    }
+    .activities__Big {
+        font-size: 15px;
+    }
+    .activities__Small {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    .activities__Top {
+        padding: 10px 0px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .activities__Svg {
+        width: 30px;
+        height: 30px;
+    }
+    .activities__Svg svg {
+        width: 20px;
+        height: 20px;
+    }
+    .activities__Big {
+        font-size: 13px;
+    }
+    .activities__Small {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .activities__Top ul li {
+        font-size: 15px;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,36 @@
+.PageLayout__Content .Rides {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.Rides .Rides_content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.Rides_content .Map_content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27,27,27,.15);
+}
+.Rides_content .routes {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    z-index: 2;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    left: 0px;
+}
+@media screen and (max-width: 600px) {
+    .Rides_content .routes {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        display: block;
+        padding: 0;
+    }
+}

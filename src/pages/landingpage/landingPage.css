@@ -1,0 +1,73 @@
+.landingPage {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: rgba(27,27,27,.15);
+    /* overflow-y: scroll; */
+    box-sizing: border-box;
+    padding: 10px 0px 20px 0px;
+}
+.landingPage, .landingPage__Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.landingPage .landingPage__Top {
+    width: max-content;
+    height: auto;
+    margin-top: 20px;
+}
+.landingPage__Top img {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+}
+.landingPage .landingPage__Main {
+    width: min(500px, 100%);
+    height: auto;
+    margin-top: 20px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.landingPage__Main h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.landingPage__Txt {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 1.4rem;
+}
+.landingPage__Buttons {
+    width: max-content;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: black;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.landingPage__Buttons:hover {
+    background-color: rgb(50, 50, 50);
+}
+.landingPage span {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+@media screen and (max-width: 550px) {
+    .landingPage__Main h1 {
+        font-size: 20px;
+    }
+    .landingPage .landingPage__Main {
+        border-radius: 0px;
+    }
+}

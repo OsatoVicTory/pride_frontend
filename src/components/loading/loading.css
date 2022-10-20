@@ -1,0 +1,15 @@
+.loadingSpinner {
+    border-radius: 50%;
+    /* background: #FFFFFF; */
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid rgb(20, 20, 20);
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

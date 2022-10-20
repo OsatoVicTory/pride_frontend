@@ -1,0 +1,125 @@
+.card {
+    width: 300px;
+    margin-top: 20px;
+    height: auto;
+    border-radius: 10px;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: all .6s ease-in-out;
+}
+.card > div {
+    width: 100%;
+    min-height: 180px;
+    height: auto;
+}
+.f__Card, .b__Card {
+    display: flex;
+    flex-direction: column;
+}
+.b__Card {
+    justify-content: space-between;
+    transform: rotateY(180deg);
+}
+.card span {
+    color: white;
+    text-transform: uppercase;
+}
+.f__Card .cardTop {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 23px;
+    font-weight: 550;
+    color: white;
+}
+.b__Card .cardTop_div {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.cardTop_div .cardTop {
+    width: 100%;
+    height: 30px;
+    background-color: black;
+}
+.card__Chip {
+    margin-top: 5px;
+    width: 70px;
+    height: 50px;
+    /* background-color: white; */
+    border-radius: 10px;
+}
+.card__Chip img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card_number {
+    margin-top: 10px;
+}
+.c_Number {
+    font-size: 26px;
+    font-weight: 600;
+}
+.f__Card .cardBase {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.b__Card .cardBase {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card_name {
+    width: max-content;
+    height: auto;
+}
+.card_name span {
+    font-size: 20px;
+    font-weight: 550;
+}
+.card_expiry {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.card_expiry_label {
+    font-size: 12px;
+    color: #aeaeae !important;
+}
+.c_Expiry {
+    margin-top: 0px;
+    font-size: 19px;
+    font-weight: 550;
+}
+.card_cvc {
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+.c_Cvc {
+    font-size: 19px;
+    font-weight: 520;
+    color: black !important;
+}
+.justAdd {
+    font-size: 13px;
+    margin-top: 5px;
+}
+@media screen and (ma-width: 310px) {
+    .card {
+        width: 290px;
+    }
+}

@@ -1,0 +1,48 @@
+.PageLayout__Content .MainApp {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.MainApp .MainApp_content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.MainApp_content .Map_content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27,27,27,.15);
+}
+.Map_content .Map_content__Loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Map_content .error__Text {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.MainApp_content .MainApp_routes {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    z-index: 2;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    left: 0px;
+}
+@media screen and (max-width: 600px) {
+    .MainApp_content .MainApp_routes {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        display: block;
+        padding: 0;
+    }
+}

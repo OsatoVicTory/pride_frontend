@@ -1,0 +1,50 @@
+.Map, .MapError {
+    width: calc(100% - 440px);
+    margin-left: 440px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MapError span {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.Marker {
+    max-width: 250px;
+    height: max-content;
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 5px;
+}
+.Marker .Marker__Img {
+    width: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Marker__Img svg {
+    width: 15px;
+    height: 15px;
+    fill: black !important;
+}
+.Marker__text {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3rem;
+    margin-left: 10px;
+}
+@media screen and (max-width: 600px) {
+    .Map, .MapError {
+        align-items: flex-start;
+        margin-left: 0px;
+        width: 100%;
+        padding-top: 80px;
+    }
+}
