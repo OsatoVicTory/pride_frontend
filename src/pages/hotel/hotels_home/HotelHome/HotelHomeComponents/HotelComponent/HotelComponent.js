@@ -28,7 +28,7 @@ const HotelComponent = ({ data }) => {
     return (
         <div className="hotelComponent">
             <div className="hC__Content">
-                <div className="hC__Routes">
+                {/* <div className="hC__Routes"> */}
                     <ul className={`hC__Routes__ul`}>
                         {hotelRoutes.map((val, idx) => (
                             <li key={`hC-${idx}`} 
@@ -38,7 +38,7 @@ const HotelComponent = ({ data }) => {
                             </li>
                         ))}
                     </ul>
-                </div>
+                {/* </div> */}
                 <div className="hC__Img"><img src={data.img} /></div>
                 <h1>{data.name}</h1>
                 {hotelRoutesPages[hotelRoute](data)}

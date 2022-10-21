@@ -7,6 +7,8 @@ const walletReducer = (state = {}, action) => {
                 ...state,
                 ...action.payload
             }
+        case "REMOVE_WALLET_DATA":
+            return action.payload
         default:
             return state
     }

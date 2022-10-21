@@ -102,9 +102,9 @@ const PasswordRecovery = () => {
                             <input placeholder="Enter Email" required
                             name="email" type="email" onChange={handleChange} />
                             <input placeholder="Enter New password" required 
-                            name="password" onChange={handleChange} />
+                            name="password" type="password" onChange={handleChange} />
                             <input placeholder="Confirm New password" required 
-                            name="confirmPassword" onChange={handleChange} />
+                            name="confirmPassword" type="password" onChange={handleChange} />
                             <div className={`passwordRecovery__Button ${position}`}
                             onMouseEnter={handleHover} onMouseLeave={() => setPosition(position)}>
                                

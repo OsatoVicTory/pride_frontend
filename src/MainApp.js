@@ -88,7 +88,7 @@ const MainApp = () => {
                         <MessagePrompt type={messageText} 
                         text={messageText==="error"?error:message} />
                         <div className="Map_content">
-                            {/* <Mapbox /> */}
+                            <Mapbox />
                         </div>
                         <div className="MainApp_routes">
                             <Routes>

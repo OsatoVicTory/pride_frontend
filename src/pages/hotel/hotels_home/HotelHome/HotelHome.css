@@ -58,6 +58,7 @@ input:focus {
     width: 100%;
     box-sizing: border-box;
     margin-top: 10px;
+    overflow-y: auto;
 }
 .HotelHomeStart .HotelHomeStart__Scroller.true {
     height: calc(100% - 70px);

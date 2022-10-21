@@ -37,6 +37,7 @@
     background-color: rgb(255, 255, 255);
     overflow-y: hidden;
     scrollbar-width: none;
+    position: relative;
 }
 .courier__Div::-webkit-scrollbar {
     width: 0px;
@@ -60,6 +61,7 @@
     font-weight: 550;
     line-height: 2rem;
     margin: 10px 10px;
+    text-align: center;
 }
 .courier__Div__Top .courier__Img {
     width: 100%;

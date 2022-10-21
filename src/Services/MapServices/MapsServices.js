@@ -55,7 +55,7 @@ export const fetchPlacesSuggestions = async (input, key) => {
             neighbourhood: regionNames.secondaryDisplayName.split(",")[0]
         }
     });
-
+    console.log(Data)
     return Data;
 }
 

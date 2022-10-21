@@ -34,7 +34,6 @@ const SelectLocation = () => {
     const [route, setRoute] = useState("allow");
     const [typingInput, setTypingInput] = useState(null);
     const user = useSelector(state => state.user);
-    console.log(user)
     const suggestions = useDebounce(typingInput, fetchPlacesSuggestions, user.RAPID_API_KEY, setRoute, setErrorData);
 
     const loc = useLocation()

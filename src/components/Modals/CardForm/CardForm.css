@@ -30,6 +30,9 @@
     height: 22px;
     cursor: pointer;
 }
+.cardFormModal__Mid {
+    overflow-y: auto;
+}
 .cardFormModal__Bottom {
     box-sizing: border-box;
     padding: 15px 20px;

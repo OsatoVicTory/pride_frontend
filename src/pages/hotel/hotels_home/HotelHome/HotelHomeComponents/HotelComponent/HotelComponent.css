@@ -1,6 +1,6 @@
 .HotelHomeStart__Scroller .hotelComponent {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 40px);
     /* overflow-y: auto; */
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -59,7 +59,7 @@
     padding: 0px 15px;
     margin: 0px 0px 10px 0px;
     position: absolute;
-    top: 80px;
+    top: 75px;
     background-color: white;
     left: 0px;
     height: auto;

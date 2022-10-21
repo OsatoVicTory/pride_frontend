@@ -132,18 +132,18 @@ const MeetDriver = ()=> {
                                 fill="currentColor"></path>
                             </svg>
                             <div className="column-flex2">
-                                <span className="thick_med">{ride.pickup.primaryAddress}</span>
+                                <span className="thick_med">{ride?.pickup?.primaryAddress}</span>
                                 <span className="light_med" style={{marginTop: "2px"}}>
-                                    {ride.pickup.secondaryAddress || ""}
+                                    {ride?.pickup?.secondaryAddress || ""}
                                 </span>
                             </div>
                         </div>
                         <div className="pickup">
                             <div className="block"></div>
                             <div className="column-flex2">
-                                <span className="thick_med">{ride.destination.primaryAddress}</span>
+                                <span className="thick_med">{ride?.destination?.primaryAddress}</span>
                                 <span className="light_med" style={{marginTop: "2px"}}>
-                                    {ride.destination.secondaryAddress}
+                                    {ride?.destination?.secondaryAddress||""}
                                 </span>
                             </div>
                         </div>

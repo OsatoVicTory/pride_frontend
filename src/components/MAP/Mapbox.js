@@ -92,14 +92,17 @@ const Mapbox = () => {
     
     useEffect(() => {
         authorizeUserAndGetApiKey(user).then(res => {
+            
+            setLoading(false);
             if(res.data.status === "failed") return setErrorData(res.data.message);
             setAuthorized(true);
             const { SESSION_TOKEN, ACCESS_TOKEN } = res.data;
             setAccesstoken(ACCESS_TOKEN);
             mapboxgl.accessToken = ACCESS_TOKEN;
+
+        }).catch(err => {
             
             setLoading(false);
-        }).catch(err => {
             setErrorData(err.message==="Network Error"?err.message:err.response?.message||"Sorry Something Went Wrong Check Internet and Try Again");
         })
 

@@ -15,7 +15,7 @@ const Driver = () => {
         <div className="driver">
             <div className="driver_pics">
                 <div className="absolute_pic">
-                    <img src={driver.img} />
+                    {driver?.img && <img src={driver.img} />}
                 </div>
                 <div className="relative_pic">
                     <img src={isCourier?bike:driverCar} />
@@ -23,10 +23,10 @@ const Driver = () => {
             </div>
             <div className="column_text">
                 <div className="display">
-                    <span className="light_med">{driver.name}</span>
+                    <span className="light_med">{driver?.name||""}</span>
                 </div>
                 <div className="display">
-                    <span className="thick_big">{driver.code}</span>
+                    <span className="thick_big">{driver?.code||""}</span>
                 </div>
                 <div className="display">
                     <span className="light_med">
@@ -41,7 +41,7 @@ const Driver = () => {
                             </path>
                         </svg>
                         <span className="light_med" style={{marginLeft: "5px"}}>
-                            {Math.max(3, driver.rating)}</span>
+                            {Math.max(3, driver?.rating||3)}</span>
                     </div>
                 </div>
             </div>

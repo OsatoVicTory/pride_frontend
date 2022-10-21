@@ -15,3 +15,12 @@ export const getWalletData = (walletData) => {
         })
     }
 }
+
+export const removeWalletData = (walletData) => {
+    return (dispatch) => {
+        dispatch({
+            type: "REMOVE_WALLET_DATA",
+            payload: walletData
+        })
+    }
+}

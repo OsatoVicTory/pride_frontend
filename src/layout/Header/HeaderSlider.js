@@ -15,7 +15,7 @@ const HeaderSlider = ({ show, toggleSlider }) => {
     const { setMessageData } = bindActionCreators(messageActions, dispatch);
     const { removeRideData } = bindActionCreators(rideActions, dispatch);
     const { removeDriverData } = bindActionCreators(driverActions, dispatch);
-    const { setWalletData } = bindActionCreators(walletActions, dispatch);
+    const { removeWalletData } = bindActionCreators(walletActions, dispatch);
 
     const headerDropdownRoute = (val) => {
         if(val.link === "/login") {
@@ -23,7 +23,7 @@ const HeaderSlider = ({ show, toggleSlider }) => {
                 if(res.data.status === "failed") return setErrorData(res.data.message);
 
                 if(res.data.message) setMessageData(res.data.message);
-                setWalletData({paid: false});
+                removeWalletData({});
                 removeRideData({});
                 removeDriverData({});
                 setTimeout(() => {

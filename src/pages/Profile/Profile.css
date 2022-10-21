@@ -1,7 +1,7 @@
 .MainApp_content .profile {
     width: 100%;
     height: 100%;
-    background: rgba(27,27,27,0.2);
+    background: rgba(27,27,27,0.7);
     display: flex;
     justify-content: center;
     position: absolute;

@@ -73,6 +73,7 @@ const LogInPage = () => {
         setLoading(true);
 
         loginUser(input).then(res => {
+            setLoading(false);
             if(res.data.status === "failed") {
                 setErrorData(res.data.message);
                 setTimeout(() => {
@@ -84,7 +85,6 @@ const LogInPage = () => {
             if(res.data.message) setMessageData(res.data.message);
             setUserData(res.data.user);
             navigate("/app/rides");
-            setLoading(false);
         }).catch(err => {
             setLoading(false);
             setErrorData(err.response?.data.message||err.message);
@@ -126,7 +126,8 @@ const LogInPage = () => {
                             name="email" onChange={handleChange} />
                             <input placeholder="Enter password" required 
                             name="password" type="password" onChange={handleChange} />
-                            <span className="login__Small cursor">
+                            <span className="login__Small cursor"
+                            onClick={() => navigate("/password-recovery")}>
                                 Having trouble signing in?
                             </span>
                             <div className={`login__Button ${position}`}

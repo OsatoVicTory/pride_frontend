@@ -4,7 +4,7 @@
     z-index: 19;
     right: 0px;
     top: 0px;
-    width: 400px;
+    width: min(400px, 100%);
 }
 .Activities .activities__Wrapper {
     width: 100%;

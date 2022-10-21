@@ -63,11 +63,18 @@ const WalletCardForm = ({ state, setState, setShowBack }) => {
         return ["cardName","cardNumber","cardExpiry","cardCvc"].find(key => !state[key]);
     }
 
+    const checkIfChanges = () => {
+        return ["cardAmount","cardName","cardNumber","cardExpiry","cardCvc"].find(key => state[key] !== wallet[key]);
+    }
+
     const handleCardSubmit = () => {
         setLoading(true);
         if(inputsNotFilled()) {
             setLoading(false);
             setErrorData("Provide Values For Empty Required Field(s)");
+        } else if(!checkIfChanges()) {
+            setLoading(false);
+            setErrorData("Can't Submit an unfilled or unchanged Form");
         } else {
             setUpWallet(state).then(res => {
                 setLoading(false);
