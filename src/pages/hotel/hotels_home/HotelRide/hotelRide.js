@@ -89,7 +89,10 @@ const HotelRide = () => {
             pickup: val
         }
         setRideInputs(data);
-        if(refOne.current) refOne.current.focus();
+        if(refOne.current) {
+            refOne.current.focus();
+            refOne.current.value = data.pickup.primaryAddress;
+        }
         const encode = encodeURL(data);
         setRoute("pride");
         navigate(`/app/hotel/ride/?${encode}`);

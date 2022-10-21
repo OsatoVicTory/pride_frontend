@@ -56,7 +56,6 @@ const SelectLocation = () => {
     }, []);
 
     useEffect(() => {
-
         if(rideInputs.pickup && rideInputs.destination) {
             const distance = getDistance(rideInputs);
             const cost = Math.ceil(80 * distance);
@@ -95,9 +94,11 @@ const SelectLocation = () => {
         setRideData(data);
         if(refOne.current) {
             if(refOne.current.value === "") refOne.current.focus();
+            if(currentInput==="pickup") refOne.current.value = data.pickup.primaryAddress;
         }
         if(refTwo.current) {
             if(refTwo.current.value === "") refTwo.current.focus();
+            if(currentInput==="destination") refTwo.current.value = data.destination.primaryAddress;
         }
         const encode = encodeURL(data);
         navigate(`/app/${location.includes("courier")?"courier/ride":"rides"}/?${encode}`);

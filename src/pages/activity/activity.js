@@ -28,8 +28,11 @@ const Activities = () => {
             if(res.data.status === "failed") return setErrorData(res.data.message);
 
             if(res.data.message) setMessageData(res.data.message);
-            setTrips(res.data.trips);
-            setActivities(res.data.trips);
+            const { trips } = res.data;
+            let filteredTrips = [];
+            for(var i=0;i<trips.length;i+=2) filteredTrips.push(trips[i]);
+            setTrips(filteredTrips);
+            setActivities(filteredTrips);
         }).catch(err => {
             setLoading(false);
             setErrorData(err.response?.data.message||err.message);
