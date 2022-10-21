@@ -147,11 +147,11 @@ const LogInPage = () => {
                             <div onClick={() => handleOpen("google")}>
                                 {SVGs.google}
                                 <span className="login__SmallThick">Google</span>
-                            </div>
-                            <div onClick={() => handleOpen("LinkedIn")}>
-                                {SVGs.linkedIn}
-                                <span className="login__SmallThick">LinkedIn</span>
-                            </div>
+                             </div>
+//                              <div onClick={() => handleOpen("LinkedIn")}>
+//                                  {SVGs.linkedIn}
+//                                  <span className="login__SmallThick">LinkedIn</span>
+//                             </div>
                         </div>
                         <div className="requestSignup">
                             <span>Don't have an account</span>
