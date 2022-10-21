@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const SERVER = "http://localhost:5000";
+const SERVER = "https://pride-app.herokuapp.com";
 
 const options = {
     withCredentials: true
@@ -55,7 +55,6 @@ export const fetchPlacesSuggestions = async (input, key) => {
             neighbourhood: regionNames.secondaryDisplayName.split(",")[0]
         }
     });
-    console.log(Data)
     return Data;
 }
 

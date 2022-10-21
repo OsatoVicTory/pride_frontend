@@ -24,7 +24,7 @@ const LogInPage = () => {
     const { setMessageData } = bindActionCreators(messageActions, dispatch);
     const { setUserData } = bindActionCreators(userActions, dispatch);
     const [textType, setTextType] = useState(null);
-    const SERVER = "http://localhost:5000";
+    const SERVER = "https://pride-app.herokuapp.com";
 
     useEffect(() => {
         if(input.email && input.password) setPosition("middle");

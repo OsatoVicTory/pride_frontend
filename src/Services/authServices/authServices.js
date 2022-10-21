@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const SERVER = "http://localhost:5000";
+const SERVER = "https://pride-app.herokuapp.com";
 
 const options = {
     withCredentials: true
