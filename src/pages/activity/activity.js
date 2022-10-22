@@ -29,10 +29,8 @@ const Activities = () => {
 
             if(res.data.message) setMessageData(res.data.message);
             const { trips } = res.data;
-            let filteredTrips = [];
-            for(var i=0;i<trips.length;i+=2) filteredTrips.push(trips[i]);
-            setTrips(filteredTrips);
-            setActivities(filteredTrips);
+            setTrips(trips);
+            setActivities(trips);
         }).catch(err => {
             setLoading(false);
             setErrorData(err.response?.data.message||err.message);
