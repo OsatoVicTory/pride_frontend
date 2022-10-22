@@ -125,7 +125,7 @@ const SignupPage = () => {
                             <div className={`signup__Button ${position}`}
                             onMouseEnter={handleHover} onMouseLeave={() => setPosition(position)}>
                                 {!loading ?
-                                    <input type="submit" value="Sign in" /> :
+                                    <input type="submit" value="Sign up" /> :
                                     <LoadingSpinner width={"14px"} height={"14px"} />
                                 }
                             </div>
