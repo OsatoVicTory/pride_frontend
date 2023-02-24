@@ -53,7 +53,7 @@ export const editProfile = async (userData) => {
 
             sendData["img"] = imgUrl.data.url;
         } else {
-            sendData["img"] = user data.img||"";
+            sendData["img"] = userData?.img||"";
         }
 
         const res = await axios.post(`${SERVER}/user/update`, sendData, options);
