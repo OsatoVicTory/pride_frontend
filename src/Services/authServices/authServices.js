@@ -40,7 +40,7 @@ export const resetPassword = async (passwordData) => {
 export const editProfile = async (userData) => {
     let sendData = userData;
     try {
-        if(userData.img) {
+        if(typeof userData.img == 'object') {
             const response = await axios.get(`${SERVER}/cloudinary`, options);
             const { data } = response.data
             const url = `https://api.cloudinary.com/v1_1/${data.cloudName}/auto/upload`;
