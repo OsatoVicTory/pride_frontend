@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const SERVER = "https://pride-app.herokuapp.com";
+const SERVER = "https://pride-app.onrender.com";
 
 
 const options = {
